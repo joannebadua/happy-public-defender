@@ -12,3 +12,16 @@ var db = require (".models");
 //Setting up Express app to handle data parsing 
 app.use(express.urlencoded({ extended : true }));
 app.use (express.json());
+
+//Static directory
+app.use(express.static("public"));
+
+//Routes
+require("./routes/attorneyData-api-routes")(app)
+
+//Sync sequelize models to start Express App
+db.sequelize.sync({}).then(function(){
+    app.listen(PORT, function(){
+        console.log("Listening at http://" + PORT);
+    });
+});
