@@ -1,0 +1,24 @@
+{
+  "name": "happy-public-defender",
+  "version": "1.0.0",
+  "description": "\"Tracks bightspots to encourage work satisfaction\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joannebadua/happy-public-defender.git"
+  },
+  "keywords": [
+    "public",
+    "interest"
+  ],
+  "author": "Joey Badua",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/joannebadua/happy-public-defender/issues"
+  },
+  "homepage": "https://github.com/joannebadua/happy-public-defender#readme"
+}
